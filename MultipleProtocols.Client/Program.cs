@@ -16,6 +16,7 @@ namespace MultipleProtocols.Client
     {
         static async Task RunClientAsync()
         {
+            Console.Title = "MultipleProtocols.Client";
             InternalLoggerFactory.DefaultFactory.AddProvider(new ConsoleLoggerProvider((s, level) => true, false));
 
             var group = new MultithreadEventLoopGroup();

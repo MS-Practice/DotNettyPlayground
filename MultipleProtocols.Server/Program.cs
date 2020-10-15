@@ -29,6 +29,7 @@ namespace MultipleProtocols.Server
     {
         static async Task RunServerAsync()
         {
+            Console.Title = "MultipleProtocols.Server";
             var logLevel = LogLevel.DEBUG;
             InternalLoggerFactory.DefaultFactory.AddProvider(new ConsoleLoggerProvider((s, level) => true, false));
 
